@@ -6,10 +6,9 @@ function move() {
     // move.style.top = '3%';
     move.style.left = '2%';
     show.style.opacity = '1';
-    show.style.animation = 'openingLeft 1s'
+    show.style.animation = 'desc 2.5s';
     blur.style.backgroundColor = 'rgba(0, 0, 0, 0.681)';
 }
-
 
 function zoomOut1() {
     var zoom = document.getElementById('image-1');
@@ -19,7 +18,6 @@ function zoomOut1() {
     zoom.style.right = '450px'
     zoom.style.boxShadow = '0px 0px 30px 0.5px black'
 }
-
 function zoomIn1() {
     var zoomIn = document.getElementById('image-1');
     zoomIn.style.width = '150px';
@@ -36,7 +34,6 @@ function zoomOut2() {
     zoom.style.right = '350px'
     zoom.style.boxShadow = '0px 0px 30px 0.5px black'
 }
-
 function zoomIn2() {
     var zoomIn = document.getElementById('image-2');
     zoomIn.style.width = '250px';
@@ -53,7 +50,6 @@ function zoomOut3() {
     zoom3.style.right = '450px'
     zoom3.style.boxShadow = '0px 0px 30px 0.5px black'
 }
-
 function zoomIn3() {
     var zoomIn3 = document.getElementById('image-3');
     zoomIn3.style.width = '150px';
@@ -70,7 +66,6 @@ function zoomOut4() {
     zoom.style.right = '450px'
     zoom.style.boxShadow = '0px 0px 30px 0.5px black'
 }
-
 function zoomIn4() {
     var zoomIn = document.getElementById('image-4');
     zoomIn.style.width = '150px';
@@ -87,7 +82,6 @@ function zoomOut5() {
     zoom.style.right = '450px'
     zoom.style.boxShadow = '0px 0px 30px 0.5px black'
 }
-
 function zoomIn5() {
     var zoomIn = document.getElementById('image-5');
     zoomIn.style.width = '150px';
@@ -104,7 +98,6 @@ function zoomOut6() {
     zoom.style.right = '450px'
     zoom.style.boxShadow = '0px 0px 30px 0.5px black'
 }
-
 function zoomIn6() {
     var zoomIn = document.getElementById('image-7');
     zoomIn.style.width = '150px';
@@ -115,16 +108,15 @@ function zoomIn6() {
 
 function zoomOut7() {
     var zoom = document.getElementById('image-8');
-    zoom.style.width = '320px';
+    zoom.style.width = '490px';
     zoom.style.height = '300px';
     zoom.style.position = 'Absolute';
-    zoom.style.right = '450px'
+    zoom.style.right = '350px'
     zoom.style.boxShadow = '0px 0px 30px 0.5px black'
 }
-
 function zoomIn7() {
     var zoomIn = document.getElementById('image-8');
-    zoomIn.style.width = '150px';
+    zoomIn.style.width = '250px';
     zoomIn.style.height = '150px';
     zoomIn.style.right = '30px';
     zoomIn.style.boxShadow = 'none'
@@ -138,7 +130,6 @@ function zoomOut8() {
     zoom.style.right = '450px'
     zoom.style.boxShadow = '0px 0px 30px 0.5px black'
 }
-
 function zoomIn8() {
     var zoomIn = document.getElementById('image-9');
     zoomIn.style.width = '150px';
@@ -156,7 +147,6 @@ function zoomOut9() {
     zoom.style.right = '450px'
     zoom.style.boxShadow = '0px 0px 30px 0.5px black'
 }
-
 function zoomIn9() {
     var zoomIn = document.getElementById('image-10');
     zoomIn.style.width = '150px';
@@ -164,8 +154,6 @@ function zoomIn9() {
     zoomIn.style.right = '30px';
     zoomIn.style.boxShadow = 'none'
 }
-
-
 
 function zoomOut10() {
     var zoom = document.getElementById('image-11');
@@ -175,7 +163,6 @@ function zoomOut10() {
     zoom.style.right = '450px'
     zoom.style.boxShadow = '0px 0px 30px 0.5px black'
 }
-
 function zoomIn10() {
     var zoomIn = document.getElementById('image-11');
     zoomIn.style.width = '150px';
@@ -183,8 +170,6 @@ function zoomIn10() {
     zoomIn.style.right = '30px';
     zoomIn.style.boxShadow = 'none'
 }
-
-
 
 function zoomOut11() {
     var zoom = document.getElementById('image-13');
@@ -194,7 +179,6 @@ function zoomOut11() {
     zoom.style.right = '450px'
     zoom.style.boxShadow = '0px 0px 30px 0.5px black'
 }
-
 function zoomIn11() {
     var zoomIn = document.getElementById('image-13');
     zoomIn.style.width = '150px';
