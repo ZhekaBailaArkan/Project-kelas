@@ -1,0 +1,140 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #393E46;
+    /* padding-right: 5%; */
+    padding-left: 2%;
+    /* scroll-behavior: smooth; */
+    font-family: Helvetica;
+}
+
+img {
+    cursor: pointer;
+}
+
+#card-parent {
+    width: 100vh;
+}
+
+#card {
+    padding: 1%;
+    background-color: #497174;
+    /* margin: 5%; */
+    margin-top: 45px;
+    /* margin-left: 50px; */
+    width: 500px;
+    height: 400px;
+    box-shadow: 1px 2px 20px #480032;
+    border-radius: 4px;
+    transition: 0.5s ease all;
+}
+
+#card:hover {
+    box-shadow: 1px 2px 30px #172774;
+}
+
+.logos li{
+    display: inline;
+    float: left;
+    margin-left: -35px;
+}
+
+.logo-img {
+    width: 40px;
+    margin-right: 50px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.logo-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.494);
+    margin-top: 4px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: 1s ease all;
+}
+
+.logo-title:hover {
+    color: black;
+}
+
+.content-zk {
+    /* top: 32%;
+    left: 32%;
+    position: absolute; */
+    margin-top: 32%;
+    margin-left: 32%;
+}
+
+.isi {
+    /* display: block; */
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+label {
+    /* position: absolute;
+    left: 0;
+    right: 100%; */
+    /* margin-left: 100px; */
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.table {
+    margin-top: 100px;
+    margin-left: 6px;
+}
+
+table {
+    /* display: block; */
+    border-spacing: 15px;
+    text-align: left;
+}
+
+.nama {
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 550;
+}
+
+.kelas {
+    font-size: 16px;
+    font-weight: 550;
+    text-transform: uppercase;
+}
+
+.jurusan {
+    font-size: 16px;
+    font-weight: 550;
+    text-transform: capitalize;
+}
+
+.alamat {
+    font-size: 16px;
+    font-weight: 550;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.ig-img {
+    /* position: absolute; */
+    /* top: 82%; */
+    /* bottom: 0; */
+    /* left: 67%; */
+    /* right: 0; */
+    margin-top: 110px;
+    margin-left: 460px;
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (max-width: 500px){
+    #card {
+        width: 200vh;
+    }
+}
