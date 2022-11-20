@@ -4,38 +4,733 @@
 }
 
 body {
-    font-family: Helvetica;
+    font-family: 'Heebo', sans-serif;
+    /* font-family: 'PT Sans', sans-serif; */
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Texturina', serif; */
     background-color: rgba(250, 250, 250);
+}
+
+@keyframes openingRight {
+    0% {
+        opacity: 0;
+        margin-right: -10px;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes openingLeft {
+    0% {
+        opacity: 0;
+        margin-left: -10px;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes identifier {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+p {
+    font-weight: 500;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li::before {
+    content: "\2022";
+    color: #236AF2;
+    font-weight: bolder;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.indent ul {
+    list-style: none;
+}
+
+.indent ul li::before {
+    content: "\2022";
+    color: #cf383f;
+    font-weight: bolder;
+    display: inline-block;
+    width: 1em;
+    margin-left: 2px;
 }
 
 .main-background {
     background-image: url(Gedung_Utama/Ruang-pertemuan1.jpg);
     background-size: cover;
-    background-attachment: local;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
 }
 
+#blur {
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.681); */
+    background-color: rgba(0, 0, 0, 0.457);
+    animation: identifier 2s;
+    transition: 0.5s ease all;
+}
+
+#judul {
+    position: absolute;
+    top: 50%;
+    left: 41%;
+    font-size: 30px;
+    text-transform: capitalize;
+    color: #236AF2;
+    font-family: sans-serif;
+    font-weight: bold;
+    /* display: inline; */
+    cursor: pointer;
+    transition: 2s ease all;
+}
+
+#descripsi {
+    position: absolute;
+    top: 63%;
+    left: 2%;
+    color: lightgray;
+    opacity: 0;
+}
+
+#btn-scrol {
+    position: absolute;
+    top: 92%;
+    left: 50%;
+}
+
+#btn-img {
+    width: 30px;
+    height: 30px;
+}
+
+#btn-img:hover {
+    filter: drop-shadow( 0px 1px 3px lightgray);
+}
+
+img {
+    transition: 0.3s ease all;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
 #resepsionis {
-    background-color: #EFF5F5;
-    height: 30vh;
-    /* margin-top: 5%; */
+    background-color: #F2F2F2;
+    height: 35vh;
+    padding: 2%;
+    animation: opacity 2s;
+    /* scroll-behavior: smooth; */
+}
+
+.title {
+    font-size: 30px;
+    text-transform: capitalize;
+    color: #236AF2;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: inline;
+    cursor: pointer;
+    animation: openingLeft 2s;
 }
 
 .content-1 {
+    margin-top: 20px;
+    float: left;
+    width: 60rem;
+    animation: openingLeft 2s;
+}
+
+.teks-1 {
     color: black;
-    padding: 2%;
-    /* border-radius: 2%; */
+    text-align: left;
+}
+
+.img-position-1 {
+    float: right;
+    margin-top: -5px;
+    animation: openingRight 2s;
+}
+
+#image-1 {
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 0px 1px 3px #F7F7F7;
 }
 
 #ruang-tamu {
-    background-color: #09d2d2;
-    height: 30vh;
-    /* margin-top: 5%; */
+    background-color: #F7F7F7;
+    height: 34vh;
+    padding: 2%;
+}
+
+.title-2 {
+    font-size: 30px;
+    text-transform: capitalize;
+    color: #236AF2;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: inline;
+    cursor: pointer;
+    animation: openingLeft 2s;
 }
 
 .content-2 {
+    margin-top: 20px;
+    /* float: left; */
+    width: 60rem;
+    animation: openingLeft 2s;
+}
+
+.teks-2 {
     color: black;
+    text-align: left;
+    display: inline;
+}
+
+.img-position-2 {
+    float: right;
+    margin-top: -80px;
+    animation: openingRight 2s;
+}
+
+#image-2 {
+    width: 250px;
+    height: 150px;
+    box-shadow: 0px 0px 1px 3px #F2F2F2;
+    transition: 0.3s ease all;
+}
+
+.image-2:hover {
+    width: 260px;
+    height: 160px;
+}
+
+#R-kesiswaan {
+    background-color: #F2F2F2;
+    height: auto;
     padding: 2%;
+}
+
+.title-3 {
+    font-size: 30px;
+    text-transform: capitalize;
+    color: #236AF2;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: inline;
+    cursor: pointer;
+    animation: openingLeft 2s;
+}
+
+.content-3 {
+    color: black;
+    margin-top: 20px;
+    width: 58rem;
+    animation: openingLeft 2s;
+}
+
+.teks-3 {
+    color: black;
+    text-align: justify;
+    /* display: inline; */
+}
+
+li {
+    margin-left: 2%;
+}
+
+.img-position-3 {
+    float: right;
+    margin-top: -285px;
+    animation: openingRight 2s;
+}
+
+#image-3 {
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 0px 1px 3px #f7f7f7;
+}
+
+
+#R-dapur {
+    background-color: #f7f7f7;
+    height: 37vh;
+    padding: 2%;
+}
+
+.title-4 {
+    font-size: 30px;
+    text-transform: capitalize;
+    color: #236AF2;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: inline;
+    cursor: pointer;
+    animation: openingLeft 2s;
+}
+
+.content-4 {
+    color: black;
+    margin-top: 20px;
+    width: 60rem;
+    animation: openingLeft 2s;
+}
+
+.teks-4 {
+    color: black;
+    text-align: justify;
+    /* display: inline; */
+}
+
+.img-position-4 {
+    float: right;
+    margin-top: -75px;
+    animation: openingRight 2s;
+}
+
+#image-4 {
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 0px 1px 3px #F2F2F2;
+}
+
+#R-bk {
+    background-color: #F2F2F2;
+    height: 40vh;
+    padding: 2%;
+}
+
+.title-5 {
+    font-size: 30px;
+    text-transform: capitalize;
+    color: #236AF2;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: inline;
+    cursor: pointer;
+    animation: openingLeft 2s;
+}
+
+.content-5 {
+    color: black;
+    margin-top: 20px;
+    width: 60rem;
+    animation: openingLeft 2s;
+}
+
+.teks-5 {
+    color: black;
+    text-align: justify;
+    /* display: inline; */
+}
+
+.img-position-5 {
+    float: right;
+    margin-top: -180px;
+    animation: openingRight 2s;
+}
+
+#image-5 {
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 0px 1px 3px #f7f7f7;
+}
+
+#R-tata-usaha {
+    background-color: #f7f7f7;
+    height: 37vh;
+    padding: 2%;
+}
+
+.title-6 {
+    font-size: 30px;
+    text-transform: capitalize;
+    color: #236AF2;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: inline;
+    cursor: pointer;
+    animation: openingLeft 2s;
+}
+
+.content-6 {
+    color: black;
+    margin-top: 20px;
+    width: 60rem;
+    animation: openingLeft 2s;
+}
+
+.teks-6 {
+    color: black;
+    text-align: justify;
+    /* display: inline; */
+}
+
+.img-position-6 {
+    float: right;
+    margin-top: -60px;
+    animation: openingRight 2s;
+}
+
+#image-6 {
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 0px 1px 3px #F2F2F2;
+}
+
+#R-kurikulum {
+    background-color: #F2F2F2;
+    height: 35vh;
+    padding: 2%;
+}
+
+.title-7 {
+    font-size: 30px;
+    text-transform: capitalize;
+    color: #236AF2;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: inline;
+    cursor: pointer;
+    animation: openingLeft 2s;
+}
+
+.content-7 {
+    color: black;
+    margin-top: 20px;
+    width: 60rem;
+    animation: openingLeft 2s;
+}
+
+.teks-7 {
+    color: black;
+    text-align: justify;
+    /* display: inline; */
+}
+
+.img-position-7 {
+    float: right;
+    margin-top: -90px;
+    animation: openingRight 2s;
+}
+
+#image-7 {
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 0px 1px 3px #f7f7f7;
+}
+
+#papan-informasi {
+    background-color: #f7f7f7;
+    height: 33vh;
+    padding: 2%;
+}
+
+.title-8 {
+    font-size: 30px;
+    text-transform: capitalize;
+    color: #236AF2;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: inline;
+    cursor: pointer;
+    animation: openingLeft 2s;
+}
+
+.content-8 {
+    color: black;
+    margin-top: 20px;
+    width: 60rem;
+    animation: openingLeft 2s;
+}
+
+.teks-8 {
+    color: black;
+    text-align: justify;
+    /* display: inline; */
+}
+
+.img-position-8 {
+    float: right;
+    margin-top: -75px;
+    animation: openingRight 2s;
+}
+
+#image-8 {
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 0px 1px 3px #F2F2F2;
+}
+
+#R-rapat {
+    background-color: #F2F2F2;
+    height: 33vh;
+    padding: 2%;
+}
+
+.title-9 {
+    font-size: 30px;
+    text-transform: capitalize;
+    color: #236AF2;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: inline;
+    cursor: pointer;
+    animation: openingLeft 2s;
+}
+
+.content-9 {
+    color: black;
+    margin-top: 20px;
+    width: 60rem;
+    animation: openingLeft 2s;
+}
+
+.teks-9 {
+    color: black;
+    text-align: justify;
+    /* display: inline; */
+}
+
+.img-position-9 {
+    float: right;
+    margin-top: -95px;
+    animation: openingRight 2s;
+}
+
+#image-9 {
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 0px 1px 3px #f7f7f7;
+}
+
+#R-kepsek {
+    background-color: #f7f7f7;
+    height: 37vh;
+    padding: 2%;
+}
+
+.title-10 {
+    font-size: 30px;
+    text-transform: capitalize;
+    color: #236AF2;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: inline;
+    cursor: pointer;
+    animation: openingLeft 2s;
+}
+
+.content-10 {
+    color: black;
+    margin-top: 20px;
+    width: 60rem;
+    animation: openingLeft 2s;
+}
+
+.teks-10 {
+    color: black;
+    text-align: justify;
+    /* display: inline; */
+}
+
+.img-position-10 {
+    float: right;
+    margin-top: -70px;
+    animation: openingRight 2s;
+}
+
+#image-10 {
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 0px 1px 3px #F2F2F2;
+}
+
+#empty-11 {
+    background-color: #F2F2F2;
+    height: 37vh;
+    padding: 2%;
+}
+
+.title-11 {
+    font-size: 30px;
+    text-transform: capitalize;
+    color: #236AF2;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: inline;
+    cursor: pointer;
+    animation: openingLeft 2s;
+}
+
+.content-11 {
+    color: black;
+    margin-top: 20px;
+    width: 60rem;
+    animation: openingLeft 2s;
+}
+
+.teks-11 {
+    color: black;
+    text-align: justify;
+    /* display: inline; */
+}
+
+.img-position-11 {
+    float: right;
+    margin-top: -75px;
+    animation: openingRight 2s;
+}
+
+#image-11 {
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 0px 1px 3px #f7f7f7;
+}
+
+#R-sarpas {
+    background-color: #f7f7f7;
+    height: 33vh;
+    padding: 2%;
+}
+
+.title-13 {
+    font-size: 30px;
+    text-transform: capitalize;
+    color: #236AF2;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: inline;
+    cursor: pointer;
+    animation: openingLeft 2s;
+}
+
+.content-13 {
+    color: black;
+    margin-top: 20px;
+    width: 60rem;
+    animation: openingLeft 2s;
+}
+
+.teks-13 {
+    color: black;
+    text-align: justify;
+    /* display: inline; */
+}
+
+.img-position-13 {
+    float: right;
+    margin-top: -115px;
+    animation: openingRight 2s;
+}
+
+#image-13 {
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 0px 1px 3px #f7f7f7;
+}
+
+#other {
+    background-color: #F2F2F2;
+    height: 92vh;
+    padding: 2%;
+}
+
+.other-title {
+    float: left;
+    margin-top: 240px;
+    font-size: 30px;
+    text-transform: capitalize;
+    color: #236AF2;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: inline;
+    cursor: pointer;
+    animation: openingLeft 2s;
+}
+
+.other-photos {
+    float: right;
+    margin-left: 580px;
+    position: absolute;
+    animation: openingLeft 2.5s;
+}
+
+#other img {
+    width: 250px;
+    height: 150px;
+    border-radius: 3%;
+}
+
+.left {
+    margin-top: 120px;
+}
+
+.right {
+    margin-left: 290px;
+    margin-top: -420px;
+    position: absolute;
+
+}
+
+.left-1,
+.left-3 {
+    display: block;
+    margin: 6%;
+}
+
+.right-1,
+.right-2,
+.right-3 {
+    display: block;
+    margin: 5%;
+}
+
+footer {
+    position: absolute;
+    padding: 22px 0 18px 44%;
+    height: 30px;
+}
+
+.copyright a{
+    text-decoration: none;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    color: black;
+}
+
+.copyright a:hover {
+    text-decoration: underline;
 }
