@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -9,6 +10,17 @@ body {
     /* font-family: 'Roboto', sans-serif; */
     /* font-family: 'Texturina', serif; */
     background-color: rgba(250, 250, 250);
+}
+
+@keyframes desc {
+    0% {
+        opacity: 0;
+        margin-left: -30px;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes openingRight {
@@ -36,18 +48,6 @@ body {
 @keyframes identifier {
     0% {
         opacity: 0;
-    }
-
-    25% {
-        opacity: 0.3;
-    }
-
-    50% {
-        opacity: 0.5;
-    }
-
-    75% {
-        opacity: 0.6;
     }
 
     100% {
@@ -472,7 +472,7 @@ li {
 .content-8 {
     color: black;
     margin-top: 20px;
-    width: 60rem;
+    width: 55rem;
     animation: openingLeft 2s;
 }
 
@@ -489,7 +489,7 @@ li {
 }
 
 #image-8 {
-    width: 150px;
+    width: 250px;
     height: 150px;
     box-shadow: 0px 0px 1px 3px #F2F2F2;
 }
