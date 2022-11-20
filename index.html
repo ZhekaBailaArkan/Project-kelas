@@ -6,30 +6,267 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@200&family=PT+Sans&family=Roboto:ital,wght@1,300&family=Texturina:opsz,wght@12..72,100&display=swap"
+        rel="stylesheet">
     <script src="script.js"></script>
     <title>Project Kelas 2</title>
 </head>
 
 <body>
 
-    <div class="main-background"></div>
+    <div class="main-background">
+        <div id="blur">
+            <div id="judul" onclick="move()">bangunan utama</div>
+            <div id="descripsi">
+                Bangunan Utama menjadi sarana yang biasanya digunakan untuk tamu yang berkunjung ke SMKN 1 Majalnegka,
+                tamu tersebut biasanya akan di arahkan dulu ke ruang tamu di Bangunan Utama. Adapun fungsi lain dari
+                Bangunan Utama ini.
+            </div>
+            <div id="btn-scrol">
+                <a href="#resepsionis"><img src="icon/chevron-down-circle.svg" id="btn-img"></a>
+            </div>
+        </div>
+    </div>
 
 
     <div id="resepsionis">
+        <div class="title" onclick="zoomIn1()">ruang resepsionis</div>
         <div class="content-1">
-            fungsi resepsionis di sekolah kita bisa untuk tamu yang ingin mengunjungi anaknya atau memanggil siswa/i
-            yang ada kepentingan khusus, selain itu resepsionis juga bisa bertugas untuk mengumumkan yang kehilangan
-            barang atau apapun.
+            <p class="teks-1">
+                Fungsi resepsionis di sekolah kita bisa untuk tamu yang ingin mengunjungi anaknya atau memanggil siswa
+                yang ada kepentingan khusus, selain itu resepsionis juga bisa bertugas untuk mengumumkan yang kehilangan
+                barang atau apapun.
+            </p>
+        </div>
+        <div class="img-position-1" onclick="zoomOut1()">
+            <img src="Gedung_Utama/IMG202211010827562.jpg" id="image-1">
         </div>
     </div>
-    
+
+
     <div id="ruang-tamu">
+        <div class="title-2" onclick="zoomIn2()">ruang tamu</div>
         <div class="content-2">
-            fungsi utama ruang tamu disini adalah untuk menerima tamu yang datang ke sekolah kita dengan keperluan
-            tertentu, misalnya dari sekolah-sekolah lain ingin mengundang sekolah kita ke acara yang
-            diselenggarakan disekolahnya.
+            <p class="teks-2">
+                Fungsi utama ruang tamu disini adalah untuk menerima tamu yang datang ke sekolah kita dengan keperluan
+                tertentu, misalnya dari sekolah-sekolah lain ingin mengundang sekolah kita ke acara yang
+                diselenggarakan disekolahnya.
+            </p>
+        </div>
+        <div class="img-position-2" onclick="zoomOut2()">
+            <img src="Gedung_Utama/IMG20221101082745_01.jpg" id="image-2">
         </div>
     </div>
+
+    <div id="R-kesiswaan">
+        <div class="title-3" onclick="zoomIn3()">ruang kesiswaan</div>
+        <div class="content-3">
+            <p class="teks-3">
+                Luar jam pelajaran di kelas untuk mengusahakan agar peserta didik dapat tumbuh dan berkembang sebagai
+                menusia seutuhnya sesuai dengan tujuan pendidikan dan ideologi negara.Adapun salah satu tujuan manajemen
+                kesiswaan adalah mengatur segala kegiatan peserta didik agar kegiatan-kegiatan tersebut dapat menunjang
+                proses pembelajaran di lembaga pendidikan dapat berjalan dengan lancar, tertib dan teratur sehingga
+                dapat
+                memberikan suatu kontribusi bagi pencapaian tujuan sekolah dan tujuan pendidikan pada umumnya.
+                Urusan Bidang kesiswaan adalah suatu tugas dalam lingkungan sekolah yang dipimpin oleh Wakil Kepala
+                Sekolah
+                Urusan Kesiswaan yang mengatur tentang hak dan kewajiban peserta didik di dalam lingkungan sekolah yang
+                meliputi :
+                <ul>
+                    <li>Penerimaan Peserta Didik Baru.</li>
+                    <li>Bimbingan dan Konseling :</li>
+                    <div class="indent">
+                        <ul>
+                            <li>Keluhan Orang Tua Peserta Didik.</li>
+                            <li>Program Pembinaan Kesiswaan.</li>
+                        </ul>
+                    </div>
+                    <li>Program kegiatan peserta didik, Ekstra Kurikuler, OSIS, UKS, ROHIS, PKS dan PMR.</li>
+                    <li>Pengelolaan fasilitas kegiatan kesiswaan.</li>
+                    <li>Peserta didik berprestasi.</li>
+                    <li>Pelaksanaan upacara bendera dan peringatan hari-hari besar Agama.
+                        Wakil Kepala Sekolah Bidang Kesiswaan bertanggung jawab terhadap tugas-tugas urusan kesiswaan
+                        antara
+                        lain :
+                        kegiatan peserta didik (OSIS), bimbingan dan konseling, pelayanan kesehatan peserta didik,
+                        kegiatan
+                        ekstra
+                        Kurikuler, kegiatan pengelolaan ketertiban peserta didik, urusan hari besar, dan kegiatan
+                        pengelolaan PMR.
+                        Pelaksanaan kegiatan urusan bidang kesiswaan, wakil kepala sekolah dibantu oleh tim Satuan Tugas
+                        Pelaksana
+                        Pembinaan Kesiswaan (STP2K) yang bertanggungjawab di masing-masing seksi.</li>
+                </ul>
+            </p>
+        </div>
+        <div class="img-position-3" onclick="zoomOut3()">
+            <img src="Gedung_Utama/IMG20221101082953_01.jpg" id="image-3">
+        </div>
+    </div>
+
+    <div id="R-dapur">
+        <div class="title-4" onclick="zoomIn4()">ruang dapur</div>
+        <div class="content-4">
+            <p class="teks-4">
+                Fungsi dapur disekolah biasanya digunakan untuk sarana guru memasak atau membuat makanan, ataupun juga
+                murid-murid bisa menggunakanya untuk meminjam alat-alat dapur ketika ada acara tertentu seperti(praktek
+                memasak dll).
+            </p>
+        </div>
+        <div class="img-position-4" onclick="zoomOut4()">
+            <img src="Gedung_Utama/IMG20221101082947_01.jpg" id="image-4">
+        </div>
+    </div>
+
+    <div id="R-bk">
+        <div class="title-5" onclick="zoomIn5()">ruang BK</div>
+        <div class="content-5">
+            <p class="teks-5">
+                Ruang Bimbingan Konseling atau biasa disebut dengan ruang BK adalah ruangan khusus untuk digunakan siswa
+                untuk mencurahkan segala permasalahan di sekolah dengan nyaman dan rileks. Ruangan khusus bimbingan
+                konseling yang digunakan oleh guru BK untuk membimbing siswa yang bersalah. memberikan ganjaran agar tak
+                terulangi lagi kesalahannya. guru bk tersebut dapat memberikan bimbingan untuk menyelesaikan masalah
+                yang kita hadapi.asas-asas bimbingan dan konseling yaitu:
+                asas kerahasiaan, kesukarelaan, keterbukaan, kekinian, kemandirian, kegiatan, kedinamisan, keterpaduan,
+                kenormatifan, keahlian, alih tangan dan tut wuri handayani.
+                Fasilitas yang terdapat di ruang BK ini antara lain: lemari untuk penyimpanan arsip, lemari untuk
+                penyimpanan media, meja kerja dan kursinya, meja konseling individu beserta kursinya, meja konseling
+                kelompok beserta kursinya serta dilengkapi dngan poster-poster yang sesuai dengan tema dan fungsi
+                ruangan tersebut.
+            </p>
+        </div>
+        <div class="img-position-5" onclick="zoomOut5()">
+            <img src="Gedung_Utama/IMG20221101082957_01.jpg" id="image-5">
+        </div>
+    </div>
+
+    <div id="R-tata-usaha">
+        <div class="title-6">ruang tata usaha</div>
+        <div class="content-6">
+            <p class="teks-6">
+                Fungsinya adalah untuk Menyelenggarakan fungsi Penyusunan rencana dan program Bagian tata usaha, Tugas
+                mereka meliputi sebagai tempat kerja petugas untuk mengerjakan administrasi sekolah,Membantu proses
+                belajar mengajar, Peralatan sekolah, keuangan, Pengelolaan perpustakaan perlengkapan yang terkait dengan
+                sekolah.
+            </p>
+        </div>
+        <div class="img-position-6">
+            <!-- <img src="Gedung_Utama/" class="image-6"> -->
+        </div>
+    </div>
+
+    <div id="R-kurikulum">
+        <div class="title-7" onclick="zoomIn6()">ruang kurikulum</div>
+        <div class="content-7">
+            <p class="teks-7">
+                Fungsi kurikulum adalah sebagai sarana untuk mengukur kemampuan diri dan konsumsi pendidikan. Hal ini
+                berkaitan juga dengan pengejaran target target yang membuat peserta didik dapat mudah memahami berbagai
+                materi ataupun melaksanakan proses pembelajaran setiap harinya dengan mudah.
+            </p>
+        </div>
+        <div class="img-position-7" onclick="zoomOut6()">
+            <img src="Gedung_Utama/IMG20221101083126_01.jpg" id="image-7">
+        </div>
+    </div>
+
+    <div id="papan-informasi">
+        <div class="title-8" onclick="zoomIn7()">papan informasi</div>
+        <div class="content-8">
+            <p class="teks-8">
+                Tujuan adanya papan informasi adalah untuk menginformasikan/memberitahukan tentang hal-hal yang
+                berhubungan dengan sekolah, misal tentang pendaftaran universitas-universitas yang sedang membuka
+                pendaftaran ataupun yang lainnya.
+            </p>
+        </div>
+        <div class="img-position-8" onclick="zoomOut7()">
+            <img src="Gedung_Utama/IMG20221101083016.jpg" id="image-8">
+        </div>
+    </div>
+
+    <div id="R-rapat">
+        <div class="title-9" onclick="zoomIn8()">ruang rapat</div>
+        <div class="content-9">
+            <p class="teks-9">
+                Ruang rapat adalah ruangan yang difungsikan sebagai tempat berkumpul, berdiskusi, rapat, untuk
+                menentukan prioritas atau membuat tujuan. Terkadang, ruangan ini juga digunakan untuk keperluan khusus,
+                seperti menggelar acara workshop, perkumpulan KM setiap kelas, dan lain sebagainya.
+            </p>
+        </div>
+        <div class="img-position-9" onclick="zoomOut8()">
+            <img src="Gedung_Utama/IMG20221101083310_01.jpg" id="image-9">
+        </div>
+    </div>
+
+    <div id="R-kepsek">
+        <div class="title-10" onclick="zoomIn9()">ruang kepala sekolah</div>
+        <div class="content-10">
+            <p class="teks-10">
+                Ruang kepala sekolah merupakan tempat tersendiri untuk kepala sekolah dalam melakukan semua tugasnya di
+                sekolah, seperti ruangan yang lainnya, seperti ruang kesiswaan, diruangan kepala sekolah juga terdapat
+                kursi dan meja khusus untuk tamu.
+            </p>
+        </div>
+        <div class="img-position-10" onclick="zoomOut9()">
+            <img src="Gedung_Utama/IMG20221101083123_01.jpg" id="image-10">
+        </div>
+    </div>
+
+    <div id="empty-11">
+        <div class="title-11" onclick="zoomIn10()">ruang administrasi umum</div>
+        <div class="content-11">
+            <p class="teks-11">
+                Ruang admistrasi umum adalah untuk meningkatkan efisiensi dan efektivitas penyelengaraan operasional
+                pendidikan dalam mencapai tujuan pendidikan. Secara khusus administrasi pendidikan di sekolah adalah
+                untuk mempersiapkan situasi di sekolah agar pendidikan dan pengajaran di dalamnya
+                berlangsung dengan baik.
+            </p>
+        </div>
+        <div class="img-position-11" onclick="zoomOut10()">
+            <img src="Gedung_Utama/IMG20221101082854_01.jpg" id="image-11">
+        </div>
+    </div>
+
+    <div id="R-sarpas">
+        <div class="title-13" onclick="zoomIn11()">ruang sarpas</div>
+        <div class="content-13">
+            <p class="teks-13">
+                Pengertian sarana adalah alat yang dapat digunakan untuk melancarkan atau memudahkan manusia dalam
+                mencapai tujuan tertentu. Sarana berhubungan langsung dan menjadi penunjang utama dalam suatu aktivitas.
+                Sarana dapat berbentuk benda bergerak dan tidak bergerak dan umumnya berbentuk kecil dan bisa
+                dipindah-pindah. Sedangkan, prasarana merupakan segala sesuatu yang menunjang secara langsung atau tidak
+                langsung segala jenis sarana.
+            </p>
+        </div>
+        <div class="img-position-13" onclick="zoomOut11()">
+            <img src="Gedung_Utama/IMG20221101083346_01.jpg" id="image-13">
+        </div>
+    </div>
+
+    <div id="other">
+        <div class="other-title">
+            other photos
+        </div>
+        <div class="other-photos">
+            <div class="left">
+                <img src="Gedung_Utama/IMG20221101082802_01.jpg" class="left-1">
+                <img src="Gedung_Utama/IMG20221101082821_01.jpg" class="left-2">
+            </div>
+            <div class="right">
+                <img src="Gedung_Utama/IMG20221101083510_01.jpg" class="right-1">
+                <img src="Gedung_Utama/IMG20221101083451_01.jpg" class="right-2">
+                <img src="Gedung_Utama/IMG20221101083732_01.jpg" class="right-3">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="copyright">
+            <a href="Halaman2/anggota.html">&copy; KELOMPOK 2 XI RPL 3</a>
+        </div>
+    </footer>
 
 </body>
 
